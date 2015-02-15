@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
   <widgets xsi:type="model:Browser" id="1" x="16" width="1001" height="1001" text="Browser&#xA;http://..." measuredWidth="1001" measuredHeight="1001"/>
-  <widgets xsi:type="model:TabbedPane" id="7" x="26" y="152" width="903" height="643" text="Häälte jagunemine parteide lõikes, Häälte jagunemine kogu riigis, Häälte jagunemine piirkondade lõikes, Häälte jagunemine konkreetsete kandidaatide lõikes" measuredWidth="903" measuredHeight="643" selection="0">
+  <widgets xsi:type="model:TabbedPane" id="7" x="26" y="88" width="903" height="903" text="Häälte jagunemine parteide lõikes, Häälte jagunemine kogu riigis, Häälte jagunemine piirkondade lõikes, Häälte jagunemine konkreetsete kandidaatide lõikes" measuredWidth="903" measuredHeight="903" selection="0">
     <items x="10" y="0" width="200" height="27" text="Häälte jagunemine parteide lõikes"/>
     <items x="210" y="0" width="179" height="27" text="Häälte jagunemine kogu riigis"/>
     <items x="389" y="0" width="220" height="27" text="Häälte jagunemine piirkondade lõikes"/>
@@ -9,6 +9,12 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:Chart" id="8" x="96" y="240" width="569" height="425" measuredWidth="569" measuredHeight="425"/>
+  <widgets xsi:type="model:TextField" id="10" x="516" y="452" text="Partei 1" measuredWidth="50" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="11" x="208" y="408" width="49" text="Partei 2" measuredWidth="49" measuredHeight="23">
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
