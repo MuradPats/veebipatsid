@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" width="1000" height="1000" text="Browser&#xA;http://..." measuredWidth="1000" measuredHeight="1000"/>
+  <widgets xsi:type="model:Shape" id="3" x="40" y="72" width="297" height="137" text="LOGO" measuredWidth="297" measuredHeight="137" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:ButtonBar" id="4" x="460" y="110" width="425" height="35" text="Kandidaadid,Tulemused,Statistika, Logi sisse" measuredWidth="425" measuredHeight="35" selection="3">
+    <font/>
+    <items x="0" y="0" width="120" height="35" text="Kandidaadid"/>
+    <items x="120" y="0" width="109" height="35" text="Tulemused"/>
+    <items x="229" y="0" width="93" height="35" text="Statistika"/>
+    <items x="322" y="0" width="103" height="35" text="Logi sisse"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="40" y="224" text="VALI SISENEMISMEETOD" measuredWidth="478" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="40" y="304" width="129" text="ID-kaart" measuredWidth="129" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="40" y="384" width="129" text="Mobiil-Id" measuredWidth="129" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
