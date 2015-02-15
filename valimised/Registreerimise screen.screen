@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" y="16" width="1000" height="1000" text="Browser&#xA;http://..." measuredWidth="1000" measuredHeight="1000"/>
+  <widgets xsi:type="model:Image" id="2" x="72" y="200" width="249" height="225" measuredWidth="249" measuredHeight="225"/>
+  <widgets xsi:type="model:Button" id="3" x="120" y="440" width="137" height="33" text="Lae pilt üles" measuredWidth="137" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="4" x="64" y="488" width="153" text="NIMI:" measuredWidth="153" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="5" x="64" y="510" width="153" text="PIIRKOND:" measuredWidth="153" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="7" x="64" y="532" width="153" text="TEIE NUMBER: randint" measuredWidth="153" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="11" x="120" y="584" width="137" height="33" text="Kinnita registreerimine" measuredWidth="137" measuredHeight="33">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
