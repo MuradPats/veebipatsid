@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" y="-8" width="1000" height="1000" text="Browser&#xA;http://..." measuredWidth="1000" measuredHeight="1000"/>
+  <widgets xsi:type="model:Breadcrumbs" id="2" x="48" y="104" text="Home,Current Page" measuredWidth="127" measuredHeight="23">
+    <font/>
+    <items link="Home.screen" x="0" y="0" width="34" height="23" text="Home"/>
+    <items x="54" y="0" width="70" height="23" text="Current Page"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="3" x="48" y="208" width="500" text="Tegum edukalt sooritatud!" measuredWidth="500" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

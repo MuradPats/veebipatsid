@@ -14,7 +14,7 @@
   <widgets xsi:type="model:TextField" id="7" x="64" y="532" width="153" text="TEIE NUMBER: randint" measuredWidth="153" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Button" id="11" x="120" y="584" width="137" height="33" text="Kinnita registreerimine" measuredWidth="137" measuredHeight="33">
+  <widgets xsi:type="model:Button" id="11" x="120" y="584" width="137" height="33" text="Kinnita registreerimine" measuredWidth="137" measuredHeight="33" link="Yep.screen">
     <font/>
   </widgets>
   <widgets xsi:type="model:Breadcrumbs" id="12" x="64" y="128" text="Home,Current Page" measuredWidth="127" measuredHeight="23">
