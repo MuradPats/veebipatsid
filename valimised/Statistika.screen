@@ -8,7 +8,7 @@
     <items x="609" y="0" width="295" height="27" text="Häälte jagunemine konkreetsete kandidaatide lõikes"/>
     <font/>
   </widgets>
-  <widgets xsi:type="model:Chart" id="8" x="112" y="248" width="569" height="425" measuredWidth="569" measuredHeight="425"/>
+  <widgets xsi:type="model:Chart" id="8" x="96" y="240" width="569" height="425" measuredWidth="569" measuredHeight="425"/>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
