@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="8" y="32" width="1000" height="1000" text="Browser&#xA;http://..." measuredWidth="1000" measuredHeight="1000"/>
+  <widgets xsi:type="model:Shape" id="10" x="56" y="112" width="161" height="89" text="Mingi logo" measuredWidth="161" measuredHeight="89" background="#4c1130" foreground="#4c1130">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="11" x="928" y="120" text="Sisene" measuredWidth="36" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="12" x="832" y="120" width="89" text="Otsing" measuredWidth="89" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="13" x="40" y="216" width="745" height="369" text="Hääletus, Kandidaadid, Tulemused&#xD;&#xA;" measuredWidth="745" measuredHeight="369" selection="0">
+    <items x="10" y="0" width="67" height="27" text="Hääletus"/>
+    <items x="77" y="0" width="87" height="27" text="Kandidaadid"/>
+    <items x="164" y="0" width="80" height="27" text="Tulemused"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="14" x="56" y="253" width="169" text="Hääletamine" measuredWidth="169" measuredHeight="28">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="15" x="56" y="296" width="169" text="Hääletamine" measuredWidth="169" measuredHeight="28">
+    <font size="15px"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="16" x="56" y="339" width="169" text="Hääletamine" measuredWidth="169" measuredHeight="28">
+    <font size="15px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
