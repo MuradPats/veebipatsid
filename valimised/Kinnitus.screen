@@ -9,9 +9,9 @@
   <widgets xsi:type="model:Button" id="9" y="480" width="193" height="65" text="Kinnita/Tühista hääl" measuredWidth="193" measuredHeight="65">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Breadcrumbs" id="10" x="-40" y="56" text="Home,Current Page" measuredWidth="127" measuredHeight="23">
+  <widgets xsi:type="model:Breadcrumbs" id="11" x="-40" y="64" text="Home,Current Page" measuredWidth="127" measuredHeight="23">
     <font/>
-    <items x="0" y="0" width="34" height="23" text="Home"/>
+    <items link="Home.screen" x="0" y="0" width="34" height="23" text="Home"/>
     <items x="54" y="0" width="70" height="23" text="Current Page"/>
   </widgets>
   <hRuler/>
