@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" y="-24" width="1000" height="1000" text="Browser&#xA;http://..." measuredWidth="1000" measuredHeight="1000"/>
+  <widgets xsi:type="model:Shape" id="10" x="56" y="112" width="161" height="89" text="Mingi logo" measuredWidth="161" measuredHeight="89" background="#4c1130" foreground="#4c1130">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="11" x="928" y="120" text="Sisene" measuredWidth="36" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="12" x="832" y="120" width="89" text="Otsing" measuredWidth="89" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Accordion" id="21" x="72" y="240" width="185" height="273" text="Hääletus&#xA;-Sub-hääletamine&#xA;-Sub-hääle tühistamine&#xA;kandidaadid&#xA;-Sub-kõik kandidaadid&#xA;-Sub-kandidaadid partei järgi&#xA;-Sub-kandidaadid piirkonna järgi&#xA;Tulemused" measuredWidth="185" measuredHeight="273" selection="2">
+    <items x="0" y="2" width="185" height="25" text="Hääletus"/>
+    <items x="0" y="27" width="185" height="25" text="-Sub-hääletamine"/>
+    <items link="Kinnitus.screen" x="0" y="52" width="185" height="25" text="-Sub-hääle tühistamine"/>
+    <items x="0" y="223" width="185" height="25" text="kandidaadid"/>
+    <items x="0" y="248" width="0" height="0" text="-Sub-kõik kandidaadid"/>
+    <items x="0" y="248" width="0" height="0" text="-Sub-kandidaadid partei järgi"/>
+    <items x="0" y="248" width="0" height="0" text="-Sub-kandidaadid piirkonna järgi"/>
+    <items x="0" y="248" width="185" height="25" text="Tulemused"/>
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
