@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="2" width="1001" height="1009" text="Browser&#xA;http://..." measuredWidth="1001" measuredHeight="1009"/>
+  <widgets xsi:type="model:Group" id="3" x="16" y="96" width="409" height="70" text="Otsing" measuredWidth="409" measuredHeight="70">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="4" x="26" y="127" width="57" text="Nimi" measuredWidth="57" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="5" x="88" y="127" width="65" text="Erakond" measuredWidth="65" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="6" x="160" y="127" width="81" text="Piirkond" measuredWidth="81" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="7" x="248" y="127" text="Valimisnumber" measuredWidth="91" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="8" x="352" y="127" text="Otsi" measuredWidth="52" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="9" x="16" y="184" width="651" height="257" text="Eesnimi,PereNimi,=. Piirkond v,(w:30). Valimisnumber,(align:center). Erakond, Hääli&#xA;Peter,Severin,Tartumaa,38,[Üksikkandidaat], 3&#xA;Henri,Severin,Pärnumaa,(bg:lightGreen).8,[Keskerakond], 2&#xA;Olga,Severin,Jõgevamaa,63,[Reformierakond], 1&#xA;" measuredWidth="651" measuredHeight="257" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
