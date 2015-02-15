@@ -22,6 +22,13 @@
   <widgets xsi:type="model:Table" id="9" x="16" y="184" width="651" height="257" text="Eesnimi,PereNimi,=. Piirkond v,(w:30). Valimisnumber,(align:center). Erakond, Hääli&#xA;Peter,Severin,Tartumaa,38,[Üksikkandidaat], 3&#xA;Henri,Severin,Pärnumaa,(bg:lightGreen).8,[Keskerakond], 2&#xA;Olga,Severin,Jõgevamaa,63,[Reformierakond], 1&#xA;" measuredWidth="651" measuredHeight="257" alternative="#eeeeee">
     <font/>
   </widgets>
+  <widgets xsi:type="model:ButtonBar" id="10" x="460" y="110" width="425" height="35" text="Kandidaadid,Tulemused,Statistika, Logi sisse" measuredWidth="425" measuredHeight="35" selection="1">
+    <font/>
+    <items link="valimise.screen" x="0" y="0" width="120" height="35" text="Kandidaadid"/>
+    <items x="120" y="0" width="109" height="35" text="Tulemused"/>
+    <items link="Statistika.screen" x="229" y="0" width="93" height="35" text="Statistika"/>
+    <items link="Sisene.screen" x="322" y="0" width="103" height="35" text="Logi sisse"/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:WidgetGroup" id="11" x="-16" y="24" measuredWidth="833" measuredHeight="537">
-    <widgets xsi:type="model:Browser" id="1" width="833" height="537" text="Browser&#xA;http://www.e-hääletamine.ee/valimine" measuredWidth="833" measuredHeight="537"/>
+  <widgets xsi:type="model:WidgetGroup" id="11" height="1000" measuredWidth="1000" measuredHeight="1000">
+    <widgets xsi:type="model:Browser" id="1" width="1000" height="1000" text="Browser&#xA;http://www.e-hääletamine.ee/valimine" measuredWidth="1000" measuredHeight="1000"/>
   </widgets>
-  <widgets xsi:type="model:Group" id="9" x="16" y="96" width="409" height="70" text="Otsing" measuredWidth="409" measuredHeight="70">
+  <widgets xsi:type="model:Group" id="9" x="16" y="160" width="409" height="70" text="Otsing" measuredWidth="409" measuredHeight="70">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Table" id="3" x="16" y="184" width="651" height="257" text="Eesnimi,PereNimi,=. Piirkond v,(w:30). Valimisnumber,(align:center). Erakond&#xA;Peter,Severin,Tartumaa,38,[Üksikkandidaat],&#xA;Henri,Severin,Pärnumaa,(bg:lightGreen).8,[Keskerakond],&#xA;Olga,Severin,Jõgevamaa,63,[Reformierakond],&#xA;" measuredWidth="651" measuredHeight="257" alternative="#eeeeee">
+  <widgets xsi:type="model:Table" id="3" x="16" y="248" width="651" height="257" text="Eesnimi,PereNimi,=. Piirkond v,(w:30). Valimisnumber,(align:center). Erakond&#xA;Peter,Severin,Tartumaa,38,[Üksikkandidaat],&#xA;Henri,Severin,Pärnumaa,(bg:lightGreen).8,[Keskerakond],&#xA;Olga,Severin,Jõgevamaa,63,[Reformierakond],&#xA;" measuredWidth="651" measuredHeight="257" alternative="#eeeeee">
     <font/>
   </widgets>
-  <widgets xsi:type="model:SearchField" id="4" x="352" y="127" text="Otsi" measuredWidth="52" measuredHeight="24">
+  <widgets xsi:type="model:SearchField" id="4" x="352" y="191" text="Otsi" measuredWidth="52" measuredHeight="24">
     <font/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="5" x="160" y="127" width="81" text="Piirkond" measuredWidth="81" measuredHeight="23">
+  <widgets xsi:type="model:TextField" id="5" x="160" y="191" width="81" text="Piirkond" measuredWidth="81" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="6" x="26" y="127" width="57" text="Nimi" measuredWidth="57" measuredHeight="23">
+  <widgets xsi:type="model:TextField" id="6" x="26" y="191" width="57" text="Nimi" measuredWidth="57" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="7" x="88" y="127" width="65" text="Erakond" measuredWidth="65" measuredHeight="23">
+  <widgets xsi:type="model:TextField" id="7" x="88" y="191" width="65" text="Erakond" measuredWidth="65" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:TextField" id="8" x="248" y="127" text="Valimisnumber" measuredWidth="91" measuredHeight="23">
+  <widgets xsi:type="model:TextField" id="8" x="248" y="191" text="Valimisnumber" measuredWidth="91" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Button" id="10" x="26" y="464" width="121" height="56" text="Hääleta valitud \n kandidaadi poolt" measuredWidth="121" measuredHeight="56">
+  <widgets xsi:type="model:Button" id="10" x="26" y="528" width="121" height="56" text="Hääleta valitud \n kandidaadi poolt" measuredWidth="121" measuredHeight="56" link="Kinnitus.screen">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Button" id="12" x="168" y="464" width="121" height="56" text="Kandideeri ise" measuredWidth="121" measuredHeight="56">
+  <widgets xsi:type="model:Button" id="12" x="168" y="528" width="121" height="56" text="Kandideeri ise" measuredWidth="121" measuredHeight="56" link="Registreerimise%20screen.screen">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Tooltip" id="14" x="488" y="111" text="Hääletamiseks ning kandideerimiseks&#xD;&#xA; tuleb eelnevalt sisse logida&#xD;&#xA;" measuredWidth="208" measuredHeight="55">
+  <widgets xsi:type="model:Tooltip" id="14" x="320" y="512" text="Hääletamiseks ning kandideerimiseks&#xD;&#xA; tuleb eelnevalt sisse logida&#xD;&#xA;" measuredWidth="208" measuredHeight="55">
     <font/>
+  </widgets>
+  <widgets xsi:type="model:ButtonBar" id="15" x="344" y="112" width="425" height="35" text="Kandidaadid,Tulemused,Statistika, Logi sisse" measuredWidth="425" measuredHeight="35" selection="0">
+    <font/>
+    <items x="0" y="0" width="120" height="35" text="Kandidaadid"/>
+    <items link="Tulemused.screen" x="120" y="0" width="109" height="35" text="Tulemused"/>
+    <items link="Statistika.screen" x="229" y="0" width="93" height="35" text="Statistika"/>
+    <items link="Sisene.screen" x="322" y="0" width="103" height="35" text="Logi sisse"/>
   </widgets>
   <hRuler/>
   <vRuler/>

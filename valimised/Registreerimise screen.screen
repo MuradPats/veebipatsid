@@ -17,6 +17,11 @@
   <widgets xsi:type="model:Button" id="11" x="120" y="584" width="137" height="33" text="Kinnita registreerimine" measuredWidth="137" measuredHeight="33">
     <font/>
   </widgets>
+  <widgets xsi:type="model:Breadcrumbs" id="12" x="64" y="128" text="Home,Current Page" measuredWidth="127" measuredHeight="23">
+    <font/>
+    <items link="Home.screen" x="0" y="0" width="34" height="23" text="Home"/>
+    <items x="54" y="0" width="70" height="23" text="Current Page"/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

@@ -16,7 +16,7 @@
   <widgets xsi:type="model:ButtonBar" id="8" x="460" y="110" width="425" height="35" text="Kandidaadid,Tulemused,Statistika, Logi sisse" measuredWidth="425" measuredHeight="35" selection="3">
     <font/>
     <items link="valimise.screen" x="0" y="0" width="120" height="35" text="Kandidaadid"/>
-    <items x="120" y="0" width="109" height="35" text="Tulemused"/>
+    <items link="Tulemused.screen" x="120" y="0" width="109" height="35" text="Tulemused"/>
     <items link="Statistika.screen" x="229" y="0" width="93" height="35" text="Statistika"/>
     <items x="322" y="0" width="103" height="35" text="Logi sisse"/>
   </widgets>
