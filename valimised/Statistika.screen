@@ -18,11 +18,11 @@
   <widgets xsi:type="model:Shape" id="12" x="56" y="80" width="297" height="137" text="LOGO" measuredWidth="297" measuredHeight="137" shapeType="rectangle">
     <font/>
   </widgets>
-  <widgets xsi:type="model:ButtonBar" id="13" x="460" y="110" width="425" height="35" text="Kandidaadid,Tulemused,Statistika, Logi sisse" measuredWidth="425" measuredHeight="35">
+  <widgets xsi:type="model:ButtonBar" id="13" x="460" y="110" width="425" height="35" text="Kandidaadid,Tulemused,Statistika, Logi sisse" measuredWidth="425" measuredHeight="35" selection="2">
     <font/>
     <items link="valimise.screen" x="0" y="0" width="120" height="35" text="Kandidaadid"/>
     <items x="120" y="0" width="109" height="35" text="Tulemused"/>
-    <items link="" x="229" y="0" width="93" height="35" text="Statistika"/>
+    <items x="229" y="0" width="93" height="35" text="Statistika"/>
     <items link="Sisene.screen" x="322" y="0" width="103" height="35" text="Logi sisse"/>
   </widgets>
   <hRuler/>
