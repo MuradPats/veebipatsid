@@ -27,6 +27,12 @@
   <widgets xsi:type="model:Button" id="10" x="26" y="464" width="121" height="56" text="Hääleta valitud \n kandidaadi poolt" measuredWidth="121" measuredHeight="56">
     <font/>
   </widgets>
+  <widgets xsi:type="model:Button" id="12" x="168" y="464" width="121" height="56" text="Kandideeri ise" measuredWidth="121" measuredHeight="56">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tooltip" id="14" x="488" y="111" text="Hääletamiseks ning kandideerimiseks&#xD;&#xA; tuleb eelnevalt sisse logida&#xD;&#xA;" measuredWidth="208" measuredHeight="55">
+    <font/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
