@@ -6,7 +6,7 @@
   <widgets xsi:type="model:TextArea" id="8" x="-8" y="320" width="201" height="129" text="Nimi&#xD;&#xA;Erakond&#xD;&#xA;Jms info" measuredWidth="201" measuredHeight="129">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Button" id="9" y="480" width="193" height="65" text="Tühista hääl" measuredWidth="193" measuredHeight="65">
+  <widgets xsi:type="model:Button" id="9" y="480" width="193" height="65" text="Kinnita/Tühista hää" measuredWidth="193" measuredHeight="65">
     <font/>
   </widgets>
   <widgets xsi:type="model:Breadcrumbs" id="10" x="-40" y="56" text="Home,Current Page" measuredWidth="127" measuredHeight="23">
