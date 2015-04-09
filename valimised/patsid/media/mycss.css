@@ -1,0 +1,98 @@
+
+
+
+div {
+    background-color:azure;
+}
+#division1 {
+    font-size: 30px;
+}
+p {
+    font-size: 22px;
+}
+h1 {
+    font-size: 45px;
+}
+
+#divison1, p, h1 {
+    font-family: verdana;
+}
+
+.crop img {
+    width: 150px;
+    height: 100px;
+    padding-top: 40px;
+}
+.crop, #division1 {
+    display: inline-block;
+}
+#lahtrid2, #lahtrid1 {
+    display: inline-block;
+    
+}
+
+
+#menu {
+    background-color:cornflowerblue;
+    display: inline-block;
+	border-style:groove;
+    border-color:cornflowerblue;
+	border-radius: 10px;
+	border-width: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+
+    
+#menu li {
+	background-color:azure;
+	display: inline-block;
+	border-style: groove;
+    border-color:cornflowerblue;
+	border-radius: 10px;
+	border-width: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.messagebox {
+
+	display: none;
+
+	background-color: azure;
+
+	font-weight: bold;
+
+	color: #176573;
+
+	width: 200px;
+
+	height: 40px;
+
+	position: fixed;
+
+	top: 40%;
+
+	left: 40%;
+
+	border: 1px solid #176573;
+
+	text-align: center;
+
+}
+
+
+
+body {
+    
+    background-color: azure;
+    overflow: auto;
+} 
