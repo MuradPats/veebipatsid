@@ -41,10 +41,13 @@ class Site extends CI_Controller {
 	public function kandidaadid()
 	{
         if($this->session->userdata('logged_in')) {
-            echo 'sa oled sisse loginud!';
             $this->getValues();
         } else {
-            echo 'sa pole sisse loginud!';
+            //echo 'Sa pole sisse loginud! ';
+            //echo 'Suunan tagasi...';
+            echo "<script type='text/javascript'>alert('Sa pole sisse loginud!');history.go(-1);</script>";
+            //sleep(3);
+            //header('Location: ' . $_SERVER['HTTP_REFERER']);
         }
 	}
     	function getValues()
