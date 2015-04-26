@@ -3,23 +3,25 @@
     <head>
 		<meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../../media/mycss.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<title>Patside E-valimised</title>
 		
     </head>
 	<body>
                         <script>
+
   // This is called with the results from from FB.getLoginStatus().
-    function removeAllByTextContent(tag, search, uusnimi) {
-        var anchors  = document.getElementsByTagName(tag);
-
-        for (var i=anchors.length-1; i>=0; i--) {
-            var    a = anchors[i], 
-            text = a.textContent || a.innerText;
-
-            if (text == search) a.innerText="Sisselogitud: " + uusnimi;
-            
-        }
-    }
+//    function removeAllByTextContent(tag, search, uusnimi) {
+//        var anchors  = document.getElementsByTagName(tag);
+//
+//        for (var i=anchors.length-1; i>=0; i--) {
+//            var    a = anchors[i], 
+//            text = a.textContent || a.innerText;
+//
+//            if (text == search) a.innerText="Sisselogitud: " + uusnimi;
+//            
+//        }
+//    }
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -28,11 +30,20 @@
     // Full docs on the response object can be found in the documentation
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
-        FB.api('/me', function(response) {
-            removeAllByTextContent("a", "Logi sisse", response.name);
+        FB.api('/me', function(response) {    
+            //removeAllByTextContent("a", "Logi sisse", response.name);
+        });
+        $.ajax({
+        // CodeIgniter URL
+        url: "http://patsid.cs.ut.ee/index.php/site/sisselogimine",
+        type: 'GET'
         });
     } else {
-        //testAPI();
+        $.ajax({
+        // CodeIgniter URL
+        url: "http://patsid.cs.ut.ee/index.php/site/valjalogimine",
+        type: 'GET'
+        });
     }
   }
 
@@ -102,8 +113,7 @@
 					<li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid" class="button">Kandidaadid</a></li>
                     <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused" class="button">Tulemused</a></li>
                     <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika" class="button">Statistika</a></li>
-                    <li><a href="http://patsid.cs.ut.ee/index.php/site/login"
-class="button">Logi sisse</a></li>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
 
 				
 				</ul>

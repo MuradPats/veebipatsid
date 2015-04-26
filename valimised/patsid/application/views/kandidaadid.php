@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-      <head>
-          
-        
+      <head>        
 		<meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../../media/mycss.css">
 		<title>Patside E-valimised/kandidaadid</title>
@@ -11,17 +9,17 @@
     <body>
     <script>
   // This is called with the results from from FB.getLoginStatus().
-    function removeAllByTextContent(tag, search, uusnimi) {
-        var anchors  = document.getElementsByTagName(tag);
-
-        for (var i=anchors.length-1; i>=0; i--) {
-            var    a = anchors[i], 
-            text = a.textContent || a.innerText;
-
-            if (text == search) a.innerText="Sisselogitud: " + uusnimi;
-            
-        }
-    }
+//    function removeAllByTextContent(tag, search, uusnimi) {
+//        var anchors  = document.getElementsByTagName(tag);
+//
+//        for (var i=anchors.length-1; i>=0; i--) {
+//            var    a = anchors[i], 
+//            text = a.textContent || a.innerText;
+//
+//            if (text == search) a.innerText="Sisselogitud: " + uusnimi;
+//            
+//        }
+//    }
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -31,10 +29,10 @@
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
         FB.api('/me', function(response) {
-            removeAllByTextContent("a", "Logi sisse", response.name);
+           // removeAllByTextContent("a", "Logi sisse", response.name);
         });
     } else {
-        testAPI();
+       // testAPI();
     }
   }
 
@@ -90,7 +88,7 @@
     location.href = 'login';
   }
 </script>
-        
+ 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	<script src="http://patsid.cs.ut.ee/media/demo.js"></script>
         		<div id="lairiba">
@@ -101,7 +99,7 @@
 					<li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid" class="button">Kandidaadid</a></li>
                     <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused" class="button">Tulemused</a></li>
                     <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika" class="button">Statistika</a></li>
-                    <li><a href="http://patsid.cs.ut.ee/index.php/site/login" class="button">Logi sisse</a></li>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
 				
 				</ul>
 	<p id="demo"></p>

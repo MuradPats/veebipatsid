@@ -360,3 +360,5 @@ $config['proxy_ips'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
+//Ecryption key:
+$config['encryption_key'] = '11-00-9999-3298734-32';

@@ -17,14 +17,35 @@ class Site extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+    function sisselogimine(){
+        if(! $this->input->is_ajax_request()) {
+            redirect('404');
+        }
+        else {
+        $this->session->set_userdata('logged_in', TRUE);
+        }
+    }
+    function valjalogimine(){
+        if(! $this->input->is_ajax_request()) {
+            redirect('404');
+        }
+        else {
+        $this->session->set_userdata('logged_in', FALSE);
+        }
+    }
+    public function index()
 	{
 		$this->load->view('avaleht.html');
 		$this->output->cache(3);
 	}
 	public function kandidaadid()
 	{
-		$this->getValues();
+        if($this->session->userdata('logged_in')) {
+            echo 'sa oled sisse loginud!';
+            $this->getValues();
+        } else {
+            echo 'sa pole sisse loginud!';
+        }
 	}
     	function getValues()
      	{
@@ -74,6 +95,34 @@ class Site extends CI_Controller {
 	{
 		$this->load->view('login.html');
 	}
+    public function table(){
+        
+        $this->load->model("get_db");
+        $data['results'] = $this->get_db->getAll2();
+
+        
+	
+        echo "<table border = 1>
+	
+        <tr>
+        <th>Valimisnumber</th>
+        <th>Nimi</th>		
+        <th>Erakond</th>
+        <th>Ringkond</th>
+        <th>Haali</th>
+        </tr>";
+        foreach($data['results'] as $row){
+                    echo "<tr>";
+                    echo "<td>". $row->Valik . "</td>";
+                    echo "<td>". $row->Name . "</td>";
+                    echo "<td>". $row->Erakond . "</td>";
+                    echo "<td>". $row->Ringkond . "</td>";
+                    echo "<td>". $row->Haali . "</td>";
+                    echo "</tr>";
+                    
+        }
+        echo "</table>";
+}
 	
     
 
