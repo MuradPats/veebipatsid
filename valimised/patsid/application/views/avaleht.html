@@ -1,46 +1,151 @@
-<!DOCTYPE html>
-<html manifest="site.manifest">
-    <head>
-		<meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../../media/mycss.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<title>Patside E-valimised</title>
-		
-    </head>
-	<body>
-        <script src="http://patsid.cs.ut.ee/media/demo3.js"></script>
-        <div id="lairiba">
-            
-            <div class="crop">
-                <img src="../../media/eesti.jpg" alt="LogoMissingBljat" >
-            </div>
-        
-		    <div id="division1">
-            
-				<ul class id="menu">
-                    
-					<li><a href="http://patsid.cs.ut.ee/" class="button">Avaleht</a></li>
-					<li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid" class="button">Kandidaadid</a></li>
-                    <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused" class="button">Tulemused</a></li>
-                    <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika" class="button">Statistika</a></li>
-                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
+<!DOCTYPE html><html manifest=site.manifest><head><meta charset=UTF-8><link rel=stylesheet type=text/css> <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../media/mycss2.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src=http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js></script><title>Patside E-valimised</title><body onload="init()"><script src=http://patsid.cs.ut.ee/media/demo3.js></script>
 
-				
-				</ul>
-                <div class="crop">
-                    <img src="../../media/eesti.jpg" alt="LogoMissingBljat" >
-                </div>
+
+<div class="page-header">
+            <div class = "crop2">
+                <h1>E-valimised <small>Veebirakenduste projekt</small></h1>
             </div>
-            <h1>E-valimiste leht</h1>
-                
-			<div id="sisu">
-                
-				<p>E-valimised toimuvad 23-28 veebruar. Veebirakendus ise valmib aprillis.                       <br>Vabandame ebameeldivuste pärast. Kaebused esitada aadressile ei_koti@gmail.com</p>
-                <p>Kandideerimiseks/hääletamiseks tuleb eelnevalt sisse logida.</p>
-			
-			</div>
-			
+            <div class="crop">
+                <img src="../../media/LOHO.jpg" alt="LogoMissingBljat" >
+            </div>
+            
+  			
 		</div>
-    </body>
-	
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Patsid</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://patsid.cs.ut.ee/">Avaleht <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid">Kandidaadid</a></li>
+           <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused">Tulemused</a></li>
+           <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika">Statistika</a></li>
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+           
+
+    <script type="text/javascript">
+    //<![CDATA[
+
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    //]]>
+    </script>
+
+    <ul id="tabs">
+      <li><a href="#about">Info</a></li>
+      <li><a href="#advantages">juhend</a></li>
+      <li><a href="#usage">KKK</a></li>
+    </ul>
+
+    <div class="tabContent" id="about">
+      <h2>Info</h2>
+      <div>
+        <p>Oletame et siin on info.</p>       
+      </div>
+    </div>
+
+    <div class="tabContent" id="advantages">
+      <h2>Juhend</h2>
+      <div>
+        <p>Oletame et siin on juhend.</p>
+        <p>pls.</p>
+      </div>
+    </div>
+
+    <div class="tabContent" id="usage">
+      <h2>KKK</h2>
+      <div>
+        <p>Korduma kippuvad kysimused</p>
+      </div>
+    </div>
+</body>
 </html>

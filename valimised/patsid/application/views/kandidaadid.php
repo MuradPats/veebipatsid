@@ -2,7 +2,15 @@
 <html>
       <head>        
 		<meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../../media/mycss.css">
+        <!-- Latest compiled and minified CSS -->
+        
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../media/mycss2.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
 		<title>Patside E-valimised/kandidaadid</title>
 		
     </head>
@@ -11,17 +19,46 @@
  
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	<script src="http://patsid.cs.ut.ee/media/demo.js"></script>
-        		<div id="lairiba">
-                    <h1>Kandidaadid</h1>
-                    <ul class id="menu">
-                    
-					<li><a href="http://patsid.cs.ut.ee/" class="button">Avaleht</a></li>
-					<li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid" class="button">Kandidaadid</a></li>
-                    <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused" class="button">Tulemused</a></li>
-                    <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika" class="button">Statistika</a></li>
-                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
-				
-				</ul>
+        		<div class="page-header">
+            <div class = "crop2">
+                <h1>E-valimised <small>Veebirakenduste projekt</small></h1>
+            </div>
+            <div class="crop">
+                <img src="../../media/LOHO.jpg" alt="LogoMissingBljat" >
+            </div>
+            
+  			
+		</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Patsid</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://patsid.cs.ut.ee/">Avaleht <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid">Kandidaadid</a></li>
+           <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused">Tulemused</a></li>
+           <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika">Statistika</a></li>
+
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 	<p id="demo"></p>
 
 	<button type="button" id = "aeg">Try it</button>
@@ -83,7 +120,7 @@
             
 
         
-    </div>
+    
     </body>
     
 </html>

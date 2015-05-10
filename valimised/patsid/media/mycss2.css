@@ -1,0 +1,58 @@
+.crop img {
+    
+    margin-right: 20px;
+    width: 160px;
+    height: 100px;
+    
+    
+}
+
+.crop {
+    float: right;
+    display: inline-block;
+}
+.crop2 {
+    
+    display: inline-block;
+}
+.messagebox {
+
+	display: none;
+
+	background-color: azure;
+
+	font-weight: bold;
+
+	color: #176573;
+
+	width: 200px;
+
+	height: 40px;
+
+	position: fixed;
+
+	top: 40%;
+
+	left: 40%;
+
+	border: 1px solid #176573;
+
+	text-align: center;
+
+}
+
+.page-header {
+    padding-top: 10px;
+    padding-bottom: 18px;
+    margin: 0px 0px 0px ;
+}
+
+body {
+    
+    background-color: azure;
+    
+} 
+
+div {
+    background-color:white;
+}

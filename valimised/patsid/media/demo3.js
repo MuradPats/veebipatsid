@@ -1,16 +1,18 @@
-
-  // This is called with the results from from FB.getLoginStatus().
-//    function removeAllByTextContent(tag, search, uusnimi) {
-//        var anchors  = document.getElementsByTagName(tag);
-//
-//        for (var i=anchors.length-1; i>=0; i--) {
-//            var    a = anchors[i], 
-//            text = a.textContent || a.innerText;
-//
-//            if (text == search) a.innerText="Sisselogitud: " + uusnimi;
-//            
-//        }
-//    }
+    function sisse() {
+        $.ajax({
+        // CodeIgniter URL
+        url: "http://patsid.cs.ut.ee/index.php/site/sisselogimine",
+        type: 'GET'
+        });             // The function returns the product of p1 and p2
+    }
+    function valja() {
+        $.ajax({
+        // CodeIgniter URL
+        url: "http://patsid.cs.ut.ee/index.php/site/valjalogimine",
+        type: 'GET'
+        });            // The function returns the product of p1 and p2
+    }
+// This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -22,17 +24,9 @@
         FB.api('/me', function(response) {    
             //removeAllByTextContent("a", "Logi sisse", response.name);
         });
-        $.ajax({
-        // CodeIgniter URL
-        url: "http://patsid.cs.ut.ee/index.php/site/sisselogimine",
-        type: 'GET'
-        });
+        sisse();
     } else {
-        $.ajax({
-        // CodeIgniter URL
-        url: "http://patsid.cs.ut.ee/index.php/site/valjalogimine",
-        type: 'GET'
-        });
+        valja();
     }
   }
 
@@ -81,10 +75,9 @@
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-
+    
+    FB.Event.subscribe('auth.login', function(){
+    sisse();
+    });
   // Here we run a very simple test of the Graph API after login is
   // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
-    //location.href = 'login';
-  }
-    reload();

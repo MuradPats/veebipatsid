@@ -9,3 +9,8 @@ ExpiresByType text/javascript A2592000
 ExpiresByType text/x-javascript A2592000
 ExpiresByType application/javascript A2592000
 </IfModule>
+<IfModule mod_deflate.c>
+<filesMatch ".(css|js|x?html?|php)$">
+SetOutputFilter DEFLATE
+</filesMatch>
+</IfModule>
