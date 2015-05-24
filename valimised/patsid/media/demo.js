@@ -25,7 +25,15 @@ $(document).ready(function(){
 
 	                $('#msgThankyou').fadeIn(600).delay(1000).fadeOut(1800);
 
+	            },
+		error: function(messageforyou)
+
+	            {
+
+	               $('#msgThankyou2').fadeIn(600).delay(1000).fadeOut(1800);
+
 	            }
+		
 
 		   
 
@@ -51,12 +59,54 @@ $(document).ready(function(){
 
 	               $('#msgThankyou').fadeIn(600).delay(1000).fadeOut(1800);
 
+	            },
+		error: function(messageforyou)
+
+	            {
+
+	               $('#msgThankyou2').fadeIn(600).delay(1000).fadeOut(1800);
+
 	            }
+		
+			
 
 	     	   });
 
 	});
+    $('#tuhistanupp').click(function(){
+		
+		$.ajax({
+				
+            type: "POST",
+
+            url: "http://patsid.cs.ut.ee/index.php/site/deleteValue/",
+				
+		    data: $("#tuhista :input").serializeArray(),
+				
+		    success: function(messageforyou)
+
+	            {
+
+	               $('#msgThankyou').fadeIn(600).delay(1000).fadeOut(1800);
+
+	            },
+		    error: function(messageforyou)
+
+	            {
+
+	               $('#msgThankyou2').fadeIn(600).delay(1000).fadeOut(1800);
+
+	            }
+
+
+	     	   });
+
+	});
+    
 	$("#kandideeri").submit( function() {
+		return false
+	});
+	$("#tuhista").submit( function() {
 		return false
 	});
     $("#haaleta").submit( function() {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="site.manifest">
       <head>
         
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="../../bootstrap/js/bootstrap.min.js"></script>
-		<title>Patside E-valimised/tulemused</title>
+		<title>Patside E-valimised</title>
 		
     </head>
     <body>
@@ -46,8 +46,8 @@
       <ul class="nav navbar-nav">
         <li><a href="http://patsid.cs.ut.ee/">Avaleht <span class="sr-only">(current)</span></a></li>
         <li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid">Kandidaadid</a></li>
-           <li class="active"><a href="http://patsid.cs.ut.ee/index.php/site/tulemused">Tulemused</a></li>
-           <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika">Statistika</a></li>
+           <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused">Tulemused</a></li>
+           <li class="active"><a href="http://patsid.cs.ut.ee/index.php/site/statistika">Statistika</a></li>
 
       </ul>
       
@@ -58,24 +58,70 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-				
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-	<script src="http://patsid.cs.ut.ee/media/demo2.js"></script>
-        <button type="button" id = "aeg">Uuenda andmeid</button>
-        <h2>Tulemuste tabel</h2>
-	<div id="Table">
-             
+        <div id="Table">
+            <h2>Erakondade l&otilde;ikes</h2> 
             <table border='1'>
             <tr>
-                <th>Valimisnumber</th>
-                <th>Nimi</th>		
+                		
+                <th>Erakond</th>
+                <th>H&auml;&auml;li</th>
+            </tr>    
+            <?php
+                foreach($results as $row){
+                    echo "<tr>";
+                    
+                    
+                    echo "<td>". $row->Erakond . "</td>";
+                    echo "<td>". $row->Haali . "</td>";
+                    echo "</tr>";
+                    
+                }
+            
+            ?>
+            </table>
+                    
+        </div>
+        <br>
+        <div id="Table2">
+            <h2>Ringkondade l&otilde;ikes</h2> 
+            <table border='1'>
+            <tr>
+                
+                <th>Ringkond</th>
+                <th>H&auml;&auml;letanuid</th>
+            </tr>    
+            <?php
+                foreach($results2 as $row){
+                    echo "<tr>";
+                    
+                    
+                    echo "<td>". $row->Ringkond . "</td>";
+                    echo "<td>". $row->Haali . "</td>";
+                    echo "</tr>";
+                    
+                }
+            
+            ?>
+            </table>
+                    
+        </div>
+        <br>
+        <div id="Table3">
+            <h2>Konkreetsete kandidaatide l&otilde;ikes kogu riigis: TOP 10</h2> 
+            <table border='1'>
+            <tr>
+                
+                <th>Kandidaadi nr.</th>
+                <th>Nimi</th>
                 <th>Erakond</th>
                 <th>Ringkond</th>
                 <th>Haali</th>
             </tr>    
             <?php
-                foreach($results as $row){
+                foreach($results3 as $row){
                     echo "<tr>";
+                    
+                    
                     echo "<td>". $row->Valik . "</td>";
                     echo "<td>". $row->Name . "</td>";
                     echo "<td>". $row->Erakond . "</td>";
@@ -89,10 +135,8 @@
             </table>
                     
         </div>
-	<h3>Viimati uuendati:</h3>
-        <div id="Table4">
-             <h2> </h2>
-                    </div>
+        
+
     </body>
     
 </html>

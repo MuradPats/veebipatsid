@@ -23,6 +23,9 @@
     if (response.status === 'connected') {
         FB.api('/me', function(response) {    
             //removeAllByTextContent("a", "Logi sisse", response.name);
+            document.getElementById("n1").value = response.name;
+            document.getElementById("n2").value = response.name;
+            document.getElementById("n3").value = response.name;
         });
         sisse();
     } else {

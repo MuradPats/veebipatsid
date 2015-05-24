@@ -1285,7 +1285,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 1px) {
   .lead {
     font-size: 21px;
   }
@@ -4076,7 +4076,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 1px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;

@@ -1,5 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+<?php 
 class Site extends CI_Controller {
 
 	/**
@@ -17,6 +16,7 @@ class Site extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+    
     function sisselogimine(){
         if(! $this->input->is_ajax_request()) {
             redirect('404');
@@ -32,6 +32,12 @@ class Site extends CI_Controller {
         else {
         $this->session->set_userdata('logged_in', FALSE);
         }
+    }
+    public function logininfo()
+    {
+        $name = $_POST['variable'];
+        //$name = "tere";
+        return $name;
     }
     public function index()
 	{
@@ -83,10 +89,20 @@ class Site extends CI_Controller {
         	$this->get_db->insert2($newRow);
 		
    	}
+        function deleteValue(){
+            $this->load->model("get_db");
+            $name = $_POST["Nimi"];
+            $this->get_db->delete($name);
+        }
 
 	public function statistika ()
 	{
-		$this->load->view('statistika.html');
+		$this->load->model("get_db");
+	$data['results2'] = $this->get_db->getAll4();
+        $data['results'] = $this->get_db->getAll3();
+        $data['results3'] = $this->get_db->getAll5();
+        
+        $this->load->view("statistika.php", $data);
 		$this->output->cache(3);
 	}
 

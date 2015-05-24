@@ -45,15 +45,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://patsid.cs.ut.ee/">Avaleht <span class="sr-only">(current)</span></a></li>
-        <li><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid">Kandidaadid</a></li>
+        <li><a href="http://patsid.cs.ut.ee/">Avaleht <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="http://patsid.cs.ut.ee/index.php/site/kandidaadid">Kandidaadid</a></li>
            <li><a href="http://patsid.cs.ut.ee/index.php/site/tulemused">Tulemused</a></li>
            <li><a href="http://patsid.cs.ut.ee/index.php/site/statistika">Statistika</a></li>
 
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></a></li>
+        <li><a class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"></a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -67,9 +67,9 @@
         <div id="lahtrid1">
                     <h2>Kandideeri</h2>
                     <form id="kandideeri" >
-			         Nimi: <input type="text" name="Nimi"><br>
-			         Ringkond: <input type="text" name="Ringkond"><br>
-			         Erakond: <input type="text" name="Erakond"><br>
+			         Nimi: <input readonly="readonly" id="n1" type="text" name="Nimi"><br>
+			         Ringkonna number: <input type="text" name="Ringkond"><br>
+			         Erakonna number: <input type="text" name="Erakond"><br>
                                                 
                         <button id = 'kandideerinupp'>Kandideeri</button>
                     </form>
@@ -78,13 +78,22 @@
         <div id="lahtrid2">
                     <h2>Hääleta</h2>
                     <form id="haaleta" >
-			         Nimi: <input type="text" name="Nimi"><br>
+			         Nimi: <input readonly="readonly" id="n2" type="text" name="Nimi"><br>
 			         Kandidaadi number: <input type="text" name="Kandidaat"><br>
 			                                 
                         <button id = 'haaletanupp'>Haaleta</button>
                     </form>
+               </div>
+ 	<div id="lahtrid3">
+                    <h2>T&uuml;hista</h2>
+                    <form id="tuhista" >
+			         Nimi: <input readonly="readonly" id="n3" type="text" name="Nimi"><br>
+			         			                                 
+                        <button id = 'tuhistanupp'>T&uuml;hista h&auml;&auml;l</button>
+                    </form>
                     
                 </div>
+
         </div>
         <div id="Table">
             <h2>Kandidaatide tabel</h2> 
@@ -114,9 +123,17 @@
 
 		<br/>
 
-		Andmed lisatud andmebaasi<br/>
+		Success!<br/>
 
 	</div>
+	<div id = "msgThankyou2" class = "messagebox">
+
+		<br/>
+
+		Failed!<br/>
+
+	</div>
+
             
 
         

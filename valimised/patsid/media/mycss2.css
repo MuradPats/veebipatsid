@@ -40,12 +40,32 @@
 	text-align: center;
 
 }
+.messagebox2 {
 
-.page-header {
-    padding-top: 10px;
-    padding-bottom: 18px;
-    margin: 0px 0px 0px ;
+	display: none;
+
+	background-color: azure;
+
+	font-weight: bold;
+
+	color: #176573;
+
+	width: 200px;
+
+	height: 40px;
+
+	position: fixed;
+
+	top: 40%;
+
+	left: 40%;
+
+	border: 1px solid #176573;
+
+	text-align: center;
+
 }
+
 
 body {
     
@@ -53,6 +73,15 @@ body {
     
 } 
 
-div {
+.page-header {
     background-color:white;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    margin: 0px 0px 0px ;
+}
+.lahtrid {
+background-color:azure;
+}
+.Table {
+background-color:azure;
 }
